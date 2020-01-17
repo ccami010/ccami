@@ -57,7 +57,7 @@ Partial Class frmMain
         Me.lblResult.Location = New System.Drawing.Point(39, 76)
         Me.lblResult.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(134, 36)
+        Me.lblResult.Size = New System.Drawing.Size(143, 36)
         Me.lblResult.TabIndex = 1
         Me.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -69,7 +69,7 @@ Partial Class frmMain
         Me.lblPrizeVal.Location = New System.Drawing.Point(39, 151)
         Me.lblPrizeVal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPrizeVal.Name = "lblPrizeVal"
-        Me.lblPrizeVal.Size = New System.Drawing.Size(134, 36)
+        Me.lblPrizeVal.Size = New System.Drawing.Size(143, 36)
         Me.lblPrizeVal.TabIndex = 2
         Me.lblPrizeVal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -81,7 +81,7 @@ Partial Class frmMain
         Me.lblWinnings.Location = New System.Drawing.Point(39, 223)
         Me.lblWinnings.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblWinnings.Name = "lblWinnings"
-        Me.lblWinnings.Size = New System.Drawing.Size(134, 36)
+        Me.lblWinnings.Size = New System.Drawing.Size(143, 36)
         Me.lblWinnings.TabIndex = 3
         Me.lblWinnings.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -122,7 +122,7 @@ Partial Class frmMain
         Me.btnStart.Location = New System.Drawing.Point(39, 327)
         Me.btnStart.Margin = New System.Windows.Forms.Padding(2)
         Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(134, 31)
+        Me.btnStart.Size = New System.Drawing.Size(143, 31)
         Me.btnStart.TabIndex = 7
         Me.btnStart.Text = "Start the Spin"
         Me.btnStart.UseVisualStyleBackColor = True
@@ -132,7 +132,7 @@ Partial Class frmMain
         Me.btnStop.Location = New System.Drawing.Point(39, 375)
         Me.btnStop.Margin = New System.Windows.Forms.Padding(2)
         Me.btnStop.Name = "btnStop"
-        Me.btnStop.Size = New System.Drawing.Size(134, 31)
+        Me.btnStop.Size = New System.Drawing.Size(143, 31)
         Me.btnStop.TabIndex = 8
         Me.btnStop.Text = "Stop the Spin"
         Me.btnStop.UseVisualStyleBackColor = True
@@ -142,7 +142,7 @@ Partial Class frmMain
         Me.btnQuit.Location = New System.Drawing.Point(39, 436)
         Me.btnQuit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(134, 31)
+        Me.btnQuit.Size = New System.Drawing.Size(143, 31)
         Me.btnQuit.TabIndex = 9
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
@@ -151,7 +151,7 @@ Partial Class frmMain
         '
         Me.picPrize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.picPrize.Image = Global.PrizeGallery.My.Resources.Resources.prize_1
-        Me.picPrize.Location = New System.Drawing.Point(232, 76)
+        Me.picPrize.Location = New System.Drawing.Point(241, 76)
         Me.picPrize.Margin = New System.Windows.Forms.Padding(2)
         Me.picPrize.Name = "picPrize"
         Me.picPrize.Size = New System.Drawing.Size(174, 263)
