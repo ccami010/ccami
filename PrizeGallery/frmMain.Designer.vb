@@ -109,7 +109,7 @@ Partial Class frmMain
         '
         Me.lblForfeit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.lblForfeit.ForeColor = System.Drawing.Color.Red
-        Me.lblForfeit.Location = New System.Drawing.Point(52, 283)
+        Me.lblForfeit.Location = New System.Drawing.Point(69, 285)
         Me.lblForfeit.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblForfeit.Name = "lblForfeit"
         Me.lblForfeit.Size = New System.Drawing.Size(92, 30)
@@ -182,6 +182,7 @@ Partial Class frmMain
         Me.ForeColor = System.Drawing.Color.DarkBlue
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mystery Prizes"
         CType(Me.picPrize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

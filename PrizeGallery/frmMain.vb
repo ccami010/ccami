@@ -48,5 +48,23 @@
                 picPrize.SizeMode = PictureBoxSizeMode.Zoom
                 lblForfeit.Visible = True
         End Select
+        lblPrizeVal.Text = FormatCurrency(sngPrizeVal)
+        If intSpinVal < 300 Then 'a winner
+            sngWinnings += sngPrizeVal
+        Else
+            sngWinnings = 0 'Wipe out the accumulated winnings!
+        End If
+        lblWinnings.Text = FormatCurrency(sngWinnings)
+        picPrize.Load("Resources\" & strImage)
+    End Sub
+
+    Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
+        Dim IntResult As Integer
+        IntResult = MessageBox.Show("You will forfeit your winnings if you quit now. Do you want to quit?", "Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If IntResult = DialogResult.No Then 'user does not want to quit
+            Exit Sub 'early jump out to the end of the procedure
+        End If
+        'end the program
+        Application.Exit()
     End Sub
 End Class

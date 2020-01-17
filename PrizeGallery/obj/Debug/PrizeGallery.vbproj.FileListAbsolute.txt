@@ -9,3 +9,7 @@ D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debu
 D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debug\PrizeGallery.xml
 D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debug\PrizeGallery.pdb
 D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debug\PrizeGallery.frmMain.resources
+D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\bin\Debug\Resources\consolation prize.png
+D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\bin\Debug\Resources\prize-2.png
+D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\bin\Debug\Resources\prize-3.png
+D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\bin\Debug\Resources\prize-1.png
