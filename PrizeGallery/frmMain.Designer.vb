@@ -22,6 +22,7 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblResult = New System.Windows.Forms.Label()
         Me.lblPrizeVal = New System.Windows.Forms.Label()
@@ -32,15 +33,19 @@ Partial Class frmMain
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnStop = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.picPrize = New System.Windows.Forms.PictureBox()
+        Me.timSpin = New System.Windows.Forms.Timer(Me.components)
+        CType(Me.picPrize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(131, 22)
+        Me.Label1.Location = New System.Drawing.Point(122, 23)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(514, 31)
+        Me.Label1.Size = New System.Drawing.Size(417, 26)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Panther Prize Gallery - Spin to Win Prizes"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -49,9 +54,10 @@ Partial Class frmMain
         '
         Me.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResult.Location = New System.Drawing.Point(36, 94)
+        Me.lblResult.Location = New System.Drawing.Point(39, 76)
+        Me.lblResult.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(153, 44)
+        Me.lblResult.Size = New System.Drawing.Size(134, 36)
         Me.lblResult.TabIndex = 1
         Me.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -60,9 +66,10 @@ Partial Class frmMain
         Me.lblPrizeVal.BackColor = System.Drawing.Color.White
         Me.lblPrizeVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPrizeVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrizeVal.Location = New System.Drawing.Point(36, 186)
+        Me.lblPrizeVal.Location = New System.Drawing.Point(39, 151)
+        Me.lblPrizeVal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPrizeVal.Name = "lblPrizeVal"
-        Me.lblPrizeVal.Size = New System.Drawing.Size(153, 44)
+        Me.lblPrizeVal.Size = New System.Drawing.Size(134, 36)
         Me.lblPrizeVal.TabIndex = 2
         Me.lblPrizeVal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -71,27 +78,30 @@ Partial Class frmMain
         Me.lblWinnings.BackColor = System.Drawing.Color.White
         Me.lblWinnings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblWinnings.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWinnings.Location = New System.Drawing.Point(36, 274)
+        Me.lblWinnings.Location = New System.Drawing.Point(39, 223)
+        Me.lblWinnings.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblWinnings.Name = "lblWinnings"
-        Me.lblWinnings.Size = New System.Drawing.Size(153, 44)
+        Me.lblWinnings.Size = New System.Drawing.Size(134, 36)
         Me.lblWinnings.TabIndex = 3
         Me.lblWinnings.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(33, 160)
+        Me.Label4.Location = New System.Drawing.Point(37, 130)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(84, 17)
+        Me.Label4.Size = New System.Drawing.Size(63, 13)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Prize Value:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(36, 248)
+        Me.Label5.Location = New System.Drawing.Point(39, 202)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(140, 17)
+        Me.Label5.Size = New System.Drawing.Size(106, 13)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Your Total Winnings:"
         '
@@ -99,46 +109,66 @@ Partial Class frmMain
         '
         Me.lblForfeit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.lblForfeit.ForeColor = System.Drawing.Color.Red
-        Me.lblForfeit.Location = New System.Drawing.Point(54, 348)
+        Me.lblForfeit.Location = New System.Drawing.Point(52, 283)
+        Me.lblForfeit.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblForfeit.Name = "lblForfeit"
-        Me.lblForfeit.Size = New System.Drawing.Size(122, 37)
+        Me.lblForfeit.Size = New System.Drawing.Size(92, 30)
         Me.lblForfeit.TabIndex = 6
         Me.lblForfeit.Text = "You Lose!"
         Me.lblForfeit.Visible = False
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(39, 403)
+        Me.btnStart.Location = New System.Drawing.Point(39, 327)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(2)
         Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(137, 38)
+        Me.btnStart.Size = New System.Drawing.Size(134, 31)
         Me.btnStart.TabIndex = 7
         Me.btnStart.Text = "Start the Spin"
         Me.btnStart.UseVisualStyleBackColor = True
         '
         'btnStop
         '
-        Me.btnStop.Location = New System.Drawing.Point(39, 462)
+        Me.btnStop.Location = New System.Drawing.Point(39, 375)
+        Me.btnStop.Margin = New System.Windows.Forms.Padding(2)
         Me.btnStop.Name = "btnStop"
-        Me.btnStop.Size = New System.Drawing.Size(137, 38)
+        Me.btnStop.Size = New System.Drawing.Size(134, 31)
         Me.btnStop.TabIndex = 8
         Me.btnStop.Text = "Stop the Spin"
         Me.btnStop.UseVisualStyleBackColor = True
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(39, 522)
+        Me.btnQuit.Location = New System.Drawing.Point(39, 436)
+        Me.btnQuit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(137, 38)
+        Me.btnQuit.Size = New System.Drawing.Size(134, 31)
         Me.btnQuit.TabIndex = 9
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
+        'picPrize
+        '
+        Me.picPrize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picPrize.Image = Global.PrizeGallery.My.Resources.Resources.prize_1
+        Me.picPrize.Location = New System.Drawing.Point(232, 76)
+        Me.picPrize.Margin = New System.Windows.Forms.Padding(2)
+        Me.picPrize.Name = "picPrize"
+        Me.picPrize.Size = New System.Drawing.Size(174, 263)
+        Me.picPrize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.picPrize.TabIndex = 10
+        Me.picPrize.TabStop = False
+        '
+        'timSpin
+        '
+        '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Linen
-        Me.ClientSize = New System.Drawing.Size(800, 615)
+        Me.ClientSize = New System.Drawing.Size(659, 500)
+        Me.Controls.Add(Me.picPrize)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnStop)
         Me.Controls.Add(Me.btnStart)
@@ -150,8 +180,10 @@ Partial Class frmMain
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.Color.DarkBlue
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmMain"
         Me.Text = "Mystery Prizes"
+        CType(Me.picPrize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -167,4 +199,6 @@ Partial Class frmMain
     Friend WithEvents btnStart As Button
     Friend WithEvents btnStop As Button
     Friend WithEvents btnQuit As Button
+    Friend WithEvents picPrize As PictureBox
+    Friend WithEvents timSpin As Timer
 End Class

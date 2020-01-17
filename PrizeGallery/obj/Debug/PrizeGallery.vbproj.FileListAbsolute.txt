@@ -8,3 +8,4 @@ D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debu
 D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debug\PrizeGallery.exe
 D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debug\PrizeGallery.xml
 D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debug\PrizeGallery.pdb
+D:\Downloads\School\14_School\Spring\Visual Basic\Sample-1\PrizeGallery\obj\Debug\PrizeGallery.frmMain.resources
