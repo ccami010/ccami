@@ -19,4 +19,34 @@
             CalculateWinnings()
         End If
     End Sub
+    Private Sub CalculateWinnings()
+        Dim intSpinVal As Integer
+        Dim intPrizeNum As Integer
+        Dim sngPrizeVal As Single
+        Dim strImage As String
+        intSpinVal = CInt(lblResult.Text) 'Converts the label's contents to an integer
+        Select Case intSpinVal
+            Case Is < 100
+                intPrizeNum = 1
+                sngPrizeVal = 50
+                strImage = "prize-1.png"
+                picPrize.SizeMode = PictureBoxSizeMode.AutoSize
+            Case Is < 200
+                intPrizeNum = 2
+                sngPrizeVal = 75
+                strImage = "prize-2.png"
+                picPrize.SizeMode = PictureBoxSizeMode.AutoSize
+            Case Is < 300
+                intPrizeNum = 3
+                sngPrizeVal = 60
+                strImage = "prize-3.png"
+                picPrize.SizeMode = PictureBoxSizeMode.AutoSize
+            Case Else 'for any other value not handled in a case statement
+                intPrizeNum = 4
+                sngPrizeVal = 0
+                strImage = "consolation prize.png"
+                picPrize.SizeMode = PictureBoxSizeMode.Zoom
+                lblForfeit.Visible = True
+        End Select
+    End Sub
 End Class
